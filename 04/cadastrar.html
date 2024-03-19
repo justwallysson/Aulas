@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade de formulario</title>
+    <title>Formularios</title>
 </head>
 <body>
-    <form >
+    <h1>Formularios</h1>
+
+    <form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="post" >  
 
         login: <br>
         <input type="text" name="login"><br>
@@ -18,39 +20,41 @@
         <input type="password" maxlength="8" name="confirmasenha"><br>
 
         Nome: <br>
-        <input type="text"  name="Nome"><br>
+        <input type="text"  name="nome"><br>
 
         Sexo: <br>
-        <input type="radio" name="Sexo"> Masculino<br>
-        <input type="radio" name="Sexo"> Feminino<br>
-        <input type="radio" name="Sexo"> Não faço <br>
+        <input type="radio" value ="masculino" name="sexo"> Masculino<br>
+        <input type="radio" value ="feminino" name="sexo"> Feminino<br>
+       
         Email: <br>
-        <input type="email" name="Email"> <br>
+        <input type="email" name="email"> <br>
 
         Interesses: <br>
-        <input type="checkbox" name="Interesses"> Raiden <br>
-        <input type="checkbox" name="Interesses"> Kokomi <br>
-        <input type="checkbox" name="Interesses"> Kazuha <br>
-        <input type="checkbox" name="Interesses"> Hutao <br>
-        <input type="checkbox" name="Interesses"> Yelan <br>
-        <input type="checkbox" name="Interesses"> Arllechinno <br>
+        <input type="checkbox" value = "Raiden" name="interesses"> Raiden <br>
+        <input type="checkbox" value = "Kokomi" name="interesses"> Kokomi <br>
+        <input type="checkbox" value = "Kazuha" name="interesses"> Kazuha <br>
+        <input type="checkbox" value = "Hutao" name="interesses"> Hutao <br>
+        <input type="checkbox" value = "Yelan" name="interesses"> Yelan <br>
+        <input type="checkbox" value = "Arllechinno" name="interesses"> Arllechinno <br>
 
         Estados: <br>
         <select name="Selecione o estado" id="estado">
-            <option value="Minas">MG</option>
-            <option value="Piaui">PI</option>
-            <option value="Bahia">BA</option>
-            <option value="São paulo">SP</option>
-            <option value="Rio de janeiro">RJ</option>
-            <option value="Maranhão">MR</option>
+            <option value="minas" name ="estado">MG</option>
+            <option value="piaui"name ="estado">Pi</option>
+            <option value="bahia"name ="estado">BA</option>
+            <option value="são paulo"name ="estado">SP</option>
+            <option value="rio de janeiro"name ="estado">RJ</option>
+            <option value="maranhão"name ="estados">MR</option>
         </select> <br> <br>
 
         Observações: <br>
-        <label for="Observações">:</label>
-        <textarea id="Observações" name="Observações" rows="4" cols="50"></textarea>
+        <label for="observações">:</label>
+        <textarea id="observações" name="observações" rows="4" cols="50"></textarea>
 
         <br>
         <input type="submit" value="Enviar" >
     </form>
-</body>    
+</body>
 </html>
+   
+ 
