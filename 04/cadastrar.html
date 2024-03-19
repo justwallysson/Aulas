@@ -1,48 +1,56 @@
-<form >
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de formulario</title>
+</head>
+<body>
+    <form >
 
+        login: <br>
+        <input type="text" name="login"><br>
 
-login: <br>
-<input type="text" name="login"><br>
+        senha: <br>
+        <input type="password" maxlength="8" name="senha"><br>
 
-senha: <br>
-<input type="password" maxlength="8" name="senha"><br>
+        Confirme a senha: <br>
+        <input type="password" maxlength="8" name="confirmasenha"><br>
 
-Confirme a senha: <br>
-<input type="password" maxlength="8" name="confirmasenha"><br>
+        Nome: <br>
+        <input type="text"  name="Nome"><br>
 
-Nome: <br>
-<input type="text"  name="Nome"><br>
+        Sexo: <br>
+        <input type="radio" name="Sexo"> Masculino<br>
+        <input type="radio" name="Sexo"> Feminino<br>
+        <input type="radio" name="Sexo"> Não faço <br>
+        Email: <br>
+        <input type="email" name="Email"> <br>
 
-Sexo: <br>
-<input type="radio" name="Sexo"> Masculino<br>
-<input type="radio" name="Sexo"> Feminino<br>
+        Interesses: <br>
+        <input type="checkbox" name="Interesses"> Raiden <br>
+        <input type="checkbox" name="Interesses"> Kokomi <br>
+        <input type="checkbox" name="Interesses"> Kazuha <br>
+        <input type="checkbox" name="Interesses"> Hutao <br>
+        <input type="checkbox" name="Interesses"> Yelan <br>
+        <input type="checkbox" name="Interesses"> Arllechinno <br>
 
-Email: <br>
-<input type="email" name="Email"> <br>
+        Estados: <br>
+        <select name="Selecione o estado" id="estado">
+            <option value="Minas">MG</option>
+            <option value="Piaui">PI</option>
+            <option value="Bahia">BA</option>
+            <option value="São paulo">SP</option>
+            <option value="Rio de janeiro">RJ</option>
+            <option value="Maranhão">MR</option>
+        </select> <br> <br>
 
-Interesses: <br>
-<input type="checkbox" name="Interesses"> Raiden <br>
-<input type="checkbox" name="Interesses"> Kokomi <br>
-<input type="checkbox" name="Interesses"> Kazuha <br>
-<input type="checkbox" name="Interesses"> Hutao <br>
-<input type="checkbox" name="Interesses"> Yelan <br>
-<input type="checkbox" name="Interesses"> Arllechinno <br>
+        Observações: <br>
+        <label for="Observações">:</label>
+        <textarea id="Observações" name="Observações" rows="4" cols="50"></textarea>
 
-Estados: <br>
-<select name="Selecione o estado" id="estado">
-    <option value="Minas">MG</option>
-    <option value="Piaui">PI</option>
-    <option value="Bahia">BA</option>
-    <option value="São paulo">SP</option>
-    <option value="Rio de janeiro">RJ</option>
-    <option value="Maranhão">MR</option>
-</select> <br> <br>
-
-Observações: <br>
-<label for="w3review">:</label>
-<textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
-
-<br>
-<input type="button" value="Enviar" >
-
-</form>
+        <br>
+        <input type="submit" value="Enviar" >
+    </form>
+</body>    
+</html>
